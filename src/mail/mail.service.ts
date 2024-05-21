@@ -31,7 +31,7 @@ export class MailService {
         to: this.toEmail,
         from: this.fromEmail,
         subject: 'Testing Node Mailer with NestJS',
-        template: 'welcome.hbs',
+        template: './welcome',
       });
     } catch (error) {
       console.error('Error sending email:', error);
